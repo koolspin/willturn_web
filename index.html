@@ -29,6 +29,31 @@
         <div class="row">
             <div class="column"><a href="crestron-zum://">crestron-zum://</a></div>
         </div>
+        <div class="row">
+            <div class="column">&nbsp;</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column"><h3>Browser Info</h3></div>
+        </div>
+        <div class="row">
+            <div class="column">UserAgent: </div>
+            <div class="column" id="uaString">&nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="column">Platform: </div>
+            <div class="column" id="navPlatform">&nbsp;</div>
+        </div>
+        <div class="row">
+            <div class="column">Product: </div>
+            <div class="column" id="navProduct">&nbsp;</div>
+        </div>
     </div>
 </body>
+<script>
+    document.getElementById("uaString").innerHTML = navigator.userAgent;
+    document.getElementById("navPlatform").innerHTML = navigator.platform;
+    document.getElementById("navProduct").innerHTML = navigator.product;
+</script>
 </html>
